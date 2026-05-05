@@ -173,9 +173,9 @@ footer{background:var(--dark);border-top:1px solid rgba(184,150,90,0.15);padding
 .reveal-delay-1{transition-delay:0.1s;}
 .reveal-delay-2{transition-delay:0.2s;}
 .reveal-delay-3{transition-delay:0.3s;}
-[data-pt]{display:none;}
-body.pt [data-en]{display:none;}
-body.pt [data-pt]{display:revert;}
+.lang-pt{display:none !important;}
+body.pt .lang-en{display:none !important;}
+body.pt .lang-pt{display:revert !important;}
 @media(max-width:900px){
   nav{padding:1rem 1.5rem;}
   .nav-cta{display:none;}
@@ -203,11 +203,11 @@ body.pt [data-pt]{display:revert;}
   </a>
   <div class="nav-right">
     <div class="lang-toggle">
-      <button class="lang-btn active" onclick="setLang('en')" id="btn-en">EN</button>
-      <button class="lang-btn" onclick="setLang('pt')" id="btn-pt">PT</button>
+      <button class="lang-btn active" id="btn-en">EN</button>
+      <button class="lang-btn" id="btn-pt">PT</button>
     </div>
-    <a class="nav-cta" href="#request" data-en>Request Availability</a>
-    <a class="nav-cta" href="#request" data-pt style="display:none">Solicitar Disponibilidade</a>
+    <a class="nav-cta" href="#request" class="lang-en">Request Availability</a>
+    <a class="nav-cta" href="#request" class="lang-pt" style="display:none">Solicitar Disponibilidade</a>
   </div>
 </nav>
 
@@ -215,104 +215,104 @@ body.pt [data-pt]{display:revert;}
   <div class="hero-bg"></div>
   <div class="hero-content">
     <div class="hero-eyebrow">
-      <span class="label" data-en>Patagonia · Upper Paraná · Argentina</span>
-      <span class="label" data-pt>Patagônia · Alto Paraná · Argentina</span>
+      <span class="label lang-en">Patagonia · Upper Paraná · Argentina</span>
+      <span class="label lang-pt">Patagônia · Alto Paraná · Argentina</span>
     </div>
-    <h1 data-en>Three Rivers.<br><em>One Lifetime Trip.</em></h1>
-    <h1 data-pt>Três Rios.<br><em>Uma Viagem Inesquecível.</em></h1>
-    <p class="hero-sub" data-en>World-class fly fishing across Argentina — wild Patagonian trout, giant migratory browns, and the legendary Golden Dorado. Orvis Endorsed. Since 1998.</p>
-    <p class="hero-sub" data-pt>Pesca com mosca de classe mundial pela Argentina — truchas selvagens da Patagônia, marrons migratórias gigantes e o lendário Dourado. Aprovado pela Orvis. Desde 1998.</p>
+    <h1 class="lang-en">Three Rivers.<br><em>One Lifetime Trip.</em></h1>
+    <h1 class="lang-pt">Três Rios.<br><em>Uma Viagem Inesquecível.</em></h1>
+    <p class="hero-sub lang-en">World-class fly fishing across Argentina — wild Patagonian trout, giant migratory browns, and the legendary Golden Dorado. Orvis Endorsed. Since 1998.</p>
+    <p class="hero-sub lang-pt">Pesca com mosca de classe mundial pela Argentina — truchas selvagens da Patagônia, marrons migratórias gigantes e o lendário Dourado. Aprovado pela Orvis. Desde 1998.</p>
     <div class="hero-ctas">
-      <a class="btn-primary" href="#programs" data-en>Explore Our Programs</a>
-      <a class="btn-primary" href="#programs" data-pt>Ver Nossos Programas</a>
-      <a class="btn-secondary" href="#request" data-en>Request Availability</a>
-      <a class="btn-secondary" href="#request" data-pt>Solicitar Disponibilidade</a>
+      <a class="btn-primary" href="#programs" class="lang-en">Explore Our Programs</a>
+      <a class="btn-primary" href="#programs" class="lang-pt">Ver Nossos Programas</a>
+      <a class="btn-secondary" href="#request" class="lang-en">Request Availability</a>
+      <a class="btn-secondary" href="#request" class="lang-pt">Solicitar Disponibilidade</a>
     </div>
   </div>
   <div class="hero-stats">
     <div class="stat-item">
       <div class="stat-num">25+</div>
-      <div class="stat-label" data-en>Years on the Water</div>
-      <div class="stat-label" data-pt>Anos no Rio</div>
+      <div class="stat-label lang-en">Years on the Water</div>
+      <div class="stat-label lang-pt">Anos no Rio</div>
     </div>
     <div class="stat-item">
       <div class="stat-num">3</div>
-      <div class="stat-label" data-en>Unique Experiences</div>
-      <div class="stat-label" data-pt>Experiências Únicas</div>
+      <div class="stat-label lang-en">Unique Experiences</div>
+      <div class="stat-label lang-pt">Experiências Únicas</div>
     </div>
     <div class="stat-item">
       <div class="stat-num">1</div>
-      <div class="stat-label" data-en>Lodge on the Alumine</div>
-      <div class="stat-label" data-pt>Lodge no Alumine</div>
+      <div class="stat-label lang-en">Lodge on the Alumine</div>
+      <div class="stat-label lang-pt">Lodge no Alumine</div>
     </div>
   </div>
 </section>
 
 <div class="trust-bar">
   <div class="trust-bar-inner">
-    <div class="trust-item"><svg width="13" height="13" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><span data-en>Orvis Endorsed Fly-Fishing Outfitter</span><span data-pt>Outfitter Certificado pela Orvis</span></div>
+    <div class="trust-item"><svg width="13" height="13" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><span class="lang-en">Orvis Endorsed Fly-Fishing Outfitter</span><span class="lang-pt">Outfitter Certificado pela Orvis</span></div>
     <div class="trust-divider"></div>
-    <div class="trust-item"><svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg><span data-en>Fly Fishing Outfitters Since 1998</span><span data-pt>Outfitters de Pesca Desde 1998</span></div>
+    <div class="trust-item"><svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg><span class="lang-en">Fly Fishing Outfitters Since 1998</span><span class="lang-pt">Outfitters de Pesca Desde 1998</span></div>
     <div class="trust-divider"></div>
-    <div class="trust-item"><svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg><span data-en>Wild Fish Only — Zero Stocking</span><span data-pt>Apenas Peixes Selvagens</span></div>
+    <div class="trust-item"><svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg><span class="lang-en">Wild Fish Only — Zero Stocking</span><span class="lang-pt">Apenas Peixes Selvagens</span></div>
     <div class="trust-divider"></div>
-    <div class="trust-item"><svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/></svg><span data-en>World-Class Certified Guides</span><span data-pt>Guias Certificados de Classe Mundial</span></div>
+    <div class="trust-item"><svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/></svg><span class="lang-en">World-Class Certified Guides</span><span class="lang-pt">Guias Certificados de Classe Mundial</span></div>
   </div>
 </div>
 
 <section class="programs-section" id="programs">
   <div class="container">
     <div class="section-header reveal">
-      <div class="label" data-en>Our Programs</div>
-      <div class="label" data-pt>Nossos Programas</div>
+      <div class="label lang-en">Our Programs</div>
+      <div class="label lang-pt">Nossos Programas</div>
       <div class="section-divider center"></div>
-      <h2 data-en>Choose Your Adventure</h2>
-      <h2 data-pt>Escolha Sua Aventura</h2>
+      <h2 class="lang-en">Choose Your Adventure</h2>
+      <h2 class="lang-pt">Escolha Sua Aventura</h2>
     </div>
     <div class="programs-grid">
-      <div class="program-card card-patagonia reveal" onclick="scrollToSection('bravo-sur')">
+      <div class="program-card card-patagonia reveal" id="card-bravo">
         <div class="program-card-bg"></div>
         <div class="program-card-info">
-          <div class="label" data-en>Patagonia, Argentina</div>
-          <div class="label" data-pt>Patagônia, Argentina</div>
+          <div class="label lang-en">Patagonia, Argentina</div>
+          <div class="label lang-pt">Patagônia, Argentina</div>
           <h3>Bravo Sur Lodge</h3>
           <div class="location">Alumine River · Northern Patagonia</div>
-          <span class="season-badge" data-en>Nov — May</span>
-          <span class="season-badge" data-pt>Nov — Mai</span>
-          <p data-en>Luxury stay in our Orvis Endorsed Lodge. The only fly fishing lodge on the Alumine — wild brown and rainbow trout, zero fishing pressure.</p>
-          <p data-pt>Estadia de luxo em nosso Lodge certificado pela Orvis. O único lodge de pesca com mosca no Rio Alumine — truchas selvagens, sem pressão de pesca.</p>
-          <div class="card-cta" data-en>View Full Details</div>
-          <div class="card-cta" data-pt>Ver Detalhes Completos</div>
+          <span class="season-badge lang-en">Nov — May</span>
+          <span class="season-badge lang-pt">Nov — Mai</span>
+          <p class="lang-en">Luxury stay in our Orvis Endorsed Lodge. The only fly fishing lodge on the Alumine — wild brown and rainbow trout, zero fishing pressure.</p>
+          <p class="lang-pt">Estadia de luxo em nosso Lodge certificado pela Orvis. O único lodge de pesca com mosca no Rio Alumine — truchas selvagens, sem pressão de pesca.</p>
+          <div class="card-cta lang-en">View Full Details</div>
+          <div class="card-cta lang-pt">Ver Detalhes Completos</div>
         </div>
       </div>
-      <div class="program-card card-parana reveal reveal-delay-1" onclick="scrollToSection('upper-parana')">
+      <div class="program-card card-parana reveal reveal-delay-1" id="card-parana">
         <div class="program-card-bg"></div>
         <div class="program-card-info">
-          <div class="label" data-en>Northern Argentina</div>
-          <div class="label" data-pt>Norte da Argentina</div>
+          <div class="label lang-en">Northern Argentina</div>
+          <div class="label lang-pt">Norte da Argentina</div>
           <h3>Upper Paraná River</h3>
           <div class="location">Estancia Don Cindo · Northern Argentina</div>
-          <span class="season-badge" data-en>Sep — Feb</span>
-          <span class="season-badge" data-pt>Set — Fev</span>
-          <p data-en>Hook the Golden King. The Upper Paraná is home to the largest Golden Dorados in the region — private lodge access, wild tropical environment.</p>
-          <p data-pt>Fisgar o Rei Dourado. O Alto Paraná abriga os maiores Dourados da região — acesso privado ao lodge, ambiente tropical selvagem.</p>
-          <div class="card-cta" data-en>View Full Details</div>
-          <div class="card-cta" data-pt>Ver Detalhes Completos</div>
+          <span class="season-badge lang-en">Sep — Feb</span>
+          <span class="season-badge lang-pt">Set — Fev</span>
+          <p class="lang-en">Hook the Golden King. The Upper Paraná is home to the largest Golden Dorados in the region — private lodge access, wild tropical environment.</p>
+          <p class="lang-pt">Fisgar o Rei Dourado. O Alto Paraná abriga os maiores Dourados da região — acesso privado ao lodge, ambiente tropical selvagem.</p>
+          <div class="card-cta lang-en">View Full Details</div>
+          <div class="card-cta lang-pt">Ver Detalhes Completos</div>
         </div>
       </div>
-      <div class="program-card card-migratory reveal reveal-delay-2" onclick="scrollToSection('migratory-brown')">
+      <div class="program-card card-migratory reveal reveal-delay-2" id="card-migratory">
         <div class="program-card-bg"></div>
         <div class="program-card-info">
-          <div class="label" data-en>Patagonia, Argentina</div>
-          <div class="label" data-pt>Patagônia, Argentina</div>
+          <div class="label lang-en">Patagonia, Argentina</div>
+          <div class="label lang-pt">Patagônia, Argentina</div>
           <h3>Giant Migratory Brown</h3>
           <div class="location">Limay River · Patagonia</div>
-          <span class="season-badge" data-en>Apr — May</span>
-          <span class="season-badge" data-pt>Abr — Mai</span>
-          <p data-en>The largest freshwater Brown Trout in the world. Float the Limay River during the spawning run — drift boat and wading, single and two-handed rods.</p>
-          <p data-pt>As maiores Truchas Marrons de água doce do mundo. Flutue o Rio Limay durante a desova — drift boat e vadeando, varas de uma e duas mãos.</p>
-          <div class="card-cta" data-en>View Full Details</div>
-          <div class="card-cta" data-pt>Ver Detalhes Completos</div>
+          <span class="season-badge lang-en">Apr — May</span>
+          <span class="season-badge lang-pt">Abr — Mai</span>
+          <p class="lang-en">The largest freshwater Brown Trout in the world. Float the Limay River during the spawning run — drift boat and wading, single and two-handed rods.</p>
+          <p class="lang-pt">As maiores Truchas Marrons de água doce do mundo. Flutue o Rio Limay durante a desova — drift boat e vadeando, varas de uma e duas mãos.</p>
+          <div class="card-cta lang-en">View Full Details</div>
+          <div class="card-cta lang-pt">Ver Detalhes Completos</div>
         </div>
       </div>
     </div>
@@ -321,10 +321,10 @@ body.pt [data-pt]{display:revert;}
 
 <div class="price-banner">
   <div style="max-width:800px;margin:0 auto">
-    <div class="price-main" data-en>Programs from <strong>USD $950</strong> per person / per day</div>
-    <div class="price-main" data-pt>Programas a partir de <strong>USD $950</strong> por pessoa / por dia</div>
-    <div class="price-sub" data-en>Minimum 4 nights &nbsp;·&nbsp; All meals, guides, equipment &amp; transfers included &nbsp;·&nbsp; International flights not included</div>
-    <div class="price-sub" data-pt>Mínimo 4 noites &nbsp;·&nbsp; Todas as refeições, guias, equipamentos e transfers incluídos &nbsp;·&nbsp; Voos internacionais não incluídos</div>
+    <div class="price-main lang-en">Programs from <strong>USD $950</strong> per person / per day</div>
+    <div class="price-main lang-pt">Programas a partir de <strong>USD $950</strong> por pessoa / por dia</div>
+    <div class="price-sub lang-en">Minimum 4 nights &nbsp;·&nbsp; All meals, guides, equipment &amp; transfers included &nbsp;·&nbsp; International flights not included</div>
+    <div class="price-sub lang-pt">Mínimo 4 noites &nbsp;·&nbsp; Todas as refeições, guias, equipamentos e transfers incluídos &nbsp;·&nbsp; Voos internacionais não incluídos</div>
   </div>
 </div>
 
@@ -333,68 +333,68 @@ body.pt [data-pt]{display:revert;}
   <div class="container">
     <div class="exp-header reveal">
       <div class="exp-header-left">
-        <div class="label" data-en>Experience 01 · Patagonia</div>
-        <div class="label" data-pt>Experiência 01 · Patagônia</div>
+        <div class="label lang-en">Experience 01 · Patagonia</div>
+        <div class="label lang-pt">Experiência 01 · Patagônia</div>
         <div class="section-divider"></div>
         <h2>Bravo Sur Lodge</h2>
-        <div class="exp-subtitle" data-en>Alumine River · Northern Patagonia · Argentina · From November to May</div>
-        <div class="exp-subtitle" data-pt>Rio Alumine · Norte da Patagônia · Argentina · De Novembro a Maio</div>
+        <div class="exp-subtitle lang-en">Alumine River · Northern Patagonia · Argentina · From November to May</div>
+        <div class="exp-subtitle lang-pt">Rio Alumine · Norte da Patagônia · Argentina · De Novembro a Maio</div>
       </div>
       <div class="exp-season">
-        <span class="season-label" data-en>Season</span>
-        <span class="season-label" data-pt>Temporada</span>
-        <div class="season-value" data-en>November to May</div>
-        <div class="season-value" data-pt>Novembro a Maio</div>
+        <span class="season-label lang-en">Season</span>
+        <span class="season-label lang-pt">Temporada</span>
+        <div class="season-value lang-en">November to May</div>
+        <div class="season-value lang-pt">Novembro a Maio</div>
       </div>
     </div>
     <div class="exp-body reveal">
       <div>
-        <div class="col-header inc" data-en>✓ Included</div>
-        <div class="col-header inc" data-pt>✓ Incluído</div>
+        <div class="col-header inc lang-en">✓ Included</div>
+        <div class="col-header inc lang-pt">✓ Incluído</div>
         <ul class="exp-list inc">
-          <li data-en>Accommodation at Bravo Sur Lodge</li><li data-pt>Hospedagem no Bravo Sur Lodge</li>
-          <li data-en>All meals — breakfast, lunch &amp; dinner</li><li data-pt>Todas as refeições — café, almoço e jantar</li>
-          <li data-en>Expert certified fly fishing guides</li><li data-pt>Guias especializados e certificados</li>
-          <li data-en>Drift boats &amp; premium fly fishing equipment</li><li data-pt>Drift boats e equipamentos premium</li>
-          <li data-en>All river and lake transfers</li><li data-pt>Todos os transfers de rio e lago</li>
-          <li data-en>Gourmet riverside lunches every day</li><li data-pt>Almoços gourmet à beira do rio todos os dias</li>
-          <li data-en>Argentine wines with dinner</li><li data-pt>Vinhos argentinos com o jantar</li>
-          <li data-en>All beverages at the lodge included</li><li data-pt>Todas as bebidas no lodge incluídas</li>
-          <li data-en>Laundry service included</li><li data-pt>Serviço de lavanderia incluído</li>
-          <li data-en>Airport transfer — San Martín de los Andes</li><li data-pt>Transfer — San Martín de los Andes</li>
-          <li data-en>Fishing licenses</li><li data-pt>Licenças de pesca</li>
-          <li data-en>Wading on small Alumine tributary rivers (Nov–Dec)</li><li data-pt>Vadeio em afluentes do Alumine (Nov–Dez)</li>
+          <li class="lang-en">Accommodation at Bravo Sur Lodge</li><li class="lang-pt">Hospedagem no Bravo Sur Lodge</li>
+          <li class="lang-en">All meals — breakfast, lunch &amp; dinner</li><li class="lang-pt">Todas as refeições — café, almoço e jantar</li>
+          <li class="lang-en">Expert certified fly fishing guides</li><li class="lang-pt">Guias especializados e certificados</li>
+          <li class="lang-en">Drift boats &amp; premium fly fishing equipment</li><li class="lang-pt">Drift boats e equipamentos premium</li>
+          <li class="lang-en">All river and lake transfers</li><li class="lang-pt">Todos os transfers de rio e lago</li>
+          <li class="lang-en">Gourmet riverside lunches every day</li><li class="lang-pt">Almoços gourmet à beira do rio todos os dias</li>
+          <li class="lang-en">Argentine wines with dinner</li><li class="lang-pt">Vinhos argentinos com o jantar</li>
+          <li class="lang-en">All beverages at the lodge included</li><li class="lang-pt">Todas as bebidas no lodge incluídas</li>
+          <li class="lang-en">Laundry service included</li><li class="lang-pt">Serviço de lavanderia incluído</li>
+          <li class="lang-en">Airport transfer — San Martín de los Andes</li><li class="lang-pt">Transfer — San Martín de los Andes</li>
+          <li class="lang-en">Fishing licenses</li><li class="lang-pt">Licenças de pesca</li>
+          <li class="lang-en">Wading on small Alumine tributary rivers (Nov–Dec)</li><li class="lang-pt">Vadeio em afluentes do Alumine (Nov–Dez)</li>
         </ul>
-        <div class="col-header not" style="margin-top:2px" data-en>✕ Not Included</div>
-        <div class="col-header not" style="margin-top:2px" data-pt>✕ Não Incluído</div>
+        <div class="col-header not" style="margin-top:2px" class="lang-en">✕ Not Included</div>
+        <div class="col-header not" style="margin-top:2px" class="lang-pt">✕ Não Incluído</div>
         <ul class="exp-list not">
-          <li data-en>International &amp; domestic flights</li><li data-pt>Voos internacionais e domésticos</li>
-          <li data-en>Gratuity for guides &amp; lodge staff</li><li data-pt>Gorjetas para guias e equipe</li>
+          <li class="lang-en">International &amp; domestic flights</li><li class="lang-pt">Voos internacionais e domésticos</li>
+          <li class="lang-en">Gratuity for guides &amp; lodge staff</li><li class="lang-pt">Gorjetas para guias e equipe</li>
         </ul>
-        <div class="col-header ext" style="margin-top:2px" data-en>+ Extras</div>
-        <div class="col-header ext" style="margin-top:2px" data-pt>+ Extras</div>
+        <div class="col-header ext" style="margin-top:2px" class="lang-en">+ Extras</div>
+        <div class="col-header ext" style="margin-top:2px" class="lang-pt">+ Extras</div>
         <ul class="exp-list ext">
-          <li data-en>Fly rods for rent</li><li data-pt>Aluguel de varas de mosca</li>
-          <li data-en>25 specific selected flies for your trip</li><li data-pt>25 moscas selecionadas para a viagem</li>
+          <li class="lang-en">Fly rods for rent</li><li class="lang-pt">Aluguel de varas de mosca</li>
+          <li class="lang-en">25 specific selected flies for your trip</li><li class="lang-pt">25 moscas selecionadas para a viagem</li>
         </ul>
       </div>
       <div>
-        <div class="col-header wat" data-en>Waters We Fish</div>
-        <div class="col-header wat" data-pt>Onde Pescamos</div>
+        <div class="col-header wat lang-en">Waters We Fish</div>
+        <div class="col-header wat lang-pt">Onde Pescamos</div>
         <div class="waters-box">
           <ul class="w-list">
-            <li><strong data-en>Alumine River</strong><strong data-pt>Rio Alumine</strong><span data-en>Upper &amp; mid stretches — pristine, exclusive trout water</span><span data-pt>Trechos superiores e médios — água exclusiva para trutas</span></li>
-            <li><strong>Pulmari Lake</strong><span data-en>Snowmelt waters — cruising browns &amp; rainbows</span><span data-pt>Águas glaciais — marrons e arco-íris cruzando</span></li>
-            <li><strong>Quillén Lake</strong><span data-en>Remote &amp; pristine — optional lake fishing day</span><span data-pt>Remoto e intocado — dia opcional de lago</span></li>
-            <li><strong data-en>Alumine Tributary Rivers</strong><strong data-pt>Afluentes do Alumine</strong><span data-en>Wading small tributaries — seasonal (Nov–Dec)</span><span data-pt>Vadeio em afluentes — sazonal (Nov–Dez)</span></li>
+            <li><strong class="lang-en">Alumine River</strong><strong class="lang-pt">Rio Alumine</strong><span class="lang-en">Upper &amp; mid stretches — pristine, exclusive trout water</span><span class="lang-pt">Trechos superiores e médios — água exclusiva para trutas</span></li>
+            <li><strong>Pulmari Lake</strong><span class="lang-en">Snowmelt waters — cruising browns &amp; rainbows</span><span class="lang-pt">Águas glaciais — marrons e arco-íris cruzando</span></li>
+            <li><strong>Quillén Lake</strong><span class="lang-en">Remote &amp; pristine — optional lake fishing day</span><span class="lang-pt">Remoto e intocado — dia opcional de lago</span></li>
+            <li><strong class="lang-en">Alumine Tributary Rivers</strong><strong class="lang-pt">Afluentes do Alumine</strong><span class="lang-en">Wading small tributaries — seasonal (Nov–Dec)</span><span class="lang-pt">Vadeio em afluentes — sazonal (Nov–Dez)</span></li>
           </ul>
         </div>
-        <div class="col-header wat" style="margin-top:2px" data-en>Target Species</div>
-        <div class="col-header wat" style="margin-top:2px" data-pt>Espécies Alvo</div>
+        <div class="col-header wat" style="margin-top:2px" class="lang-en">Target Species</div>
+        <div class="col-header wat" style="margin-top:2px" class="lang-pt">Espécies Alvo</div>
         <div class="waters-box">
           <ul class="s-list">
-            <li><strong>Brown Trout</strong><span data-en>The crown jewel of Patagonian fly fishing</span><span data-pt>A joia da pesca com mosca na Patagônia</span></li>
-            <li><strong>Rainbow Trout</strong><span data-en>Acrobatic, powerful &amp; spectacular fighters</span><span data-pt>Acrobática, poderosa e espetacular</span></li>
+            <li><strong>Brown Trout</strong><span class="lang-en">The crown jewel of Patagonian fly fishing</span><span class="lang-pt">A joia da pesca com mosca na Patagônia</span></li>
+            <li><strong>Rainbow Trout</strong><span class="lang-en">Acrobatic, powerful &amp; spectacular fighters</span><span class="lang-pt">Acrobática, poderosa e espetacular</span></li>
           </ul>
         </div>
       </div>
@@ -404,10 +404,10 @@ body.pt [data-pt]{display:revert;}
       </div>
     </div>
     <div class="exp-cta reveal">
-      <a class="btn-primary" href="#request" data-en>Request Availability — Bravo Sur</a>
-      <a class="btn-primary" href="#request" data-pt>Solicitar Disponibilidade — Bravo Sur</a>
-      <div class="exp-price" data-en>From <strong>USD $950</strong> per person / per day · Min. 4 nights</div>
-      <div class="exp-price" data-pt>A partir de <strong>USD $950</strong> por pessoa / por dia · Mín. 4 noites</div>
+      <a class="btn-primary" href="#request" class="lang-en">Request Availability — Bravo Sur</a>
+      <a class="btn-primary" href="#request" class="lang-pt">Solicitar Disponibilidade — Bravo Sur</a>
+      <div class="exp-price lang-en">From <strong>USD $950</strong> per person / per day · Min. 4 nights</div>
+      <div class="exp-price lang-pt">A partir de <strong>USD $950</strong> por pessoa / por dia · Mín. 4 noites</div>
     </div>
   </div>
 </section>
@@ -417,63 +417,63 @@ body.pt [data-pt]{display:revert;}
   <div class="container">
     <div class="exp-header reveal">
       <div class="exp-header-left">
-        <div class="label" data-en>Experience 02 · Northern Argentina</div>
-        <div class="label" data-pt>Experiência 02 · Norte da Argentina</div>
+        <div class="label lang-en">Experience 02 · Northern Argentina</div>
+        <div class="label lang-pt">Experiência 02 · Norte da Argentina</div>
         <div class="section-divider"></div>
         <h2>Upper Paraná River</h2>
-        <div class="exp-subtitle" data-en>Estancia Don Cindo · Northern Argentina · From September to February</div>
-        <div class="exp-subtitle" data-pt>Estância Don Cindo · Norte da Argentina · De Setembro a Fevereiro</div>
+        <div class="exp-subtitle lang-en">Estancia Don Cindo · Northern Argentina · From September to February</div>
+        <div class="exp-subtitle lang-pt">Estância Don Cindo · Norte da Argentina · De Setembro a Fevereiro</div>
       </div>
       <div class="exp-season">
-        <span class="season-label" data-en>Season</span>
-        <span class="season-label" data-pt>Temporada</span>
-        <div class="season-value" data-en>September to February</div>
-        <div class="season-value" data-pt>Setembro a Fevereiro</div>
+        <span class="season-label lang-en">Season</span>
+        <span class="season-label lang-pt">Temporada</span>
+        <div class="season-value lang-en">September to February</div>
+        <div class="season-value lang-pt">Setembro a Fevereiro</div>
       </div>
     </div>
     <div class="exp-body reveal">
       <div>
-        <div class="col-header inc" data-en>✓ Included</div>
-        <div class="col-header inc" data-pt>✓ Incluído</div>
+        <div class="col-header inc lang-en">✓ Included</div>
+        <div class="col-header inc lang-pt">✓ Incluído</div>
         <ul class="exp-list inc">
-          <li data-en>Accommodation at Estancia Don Cindo</li><li data-pt>Hospedagem na Estância Don Cindo</li>
-          <li data-en>All meals — breakfast, lunch &amp; dinner</li><li data-pt>Todas as refeições — café, almoço e jantar</li>
-          <li data-en>Expert certified fly fishing guides</li><li data-pt>Guias especializados e certificados</li>
-          <li data-en>Motor boats &amp; premium fly fishing equipment</li><li data-pt>Barcos a motor e equipamentos premium</li>
-          <li data-en>Argentine wines with dinner</li><li data-pt>Vinhos argentinos com o jantar</li>
-          <li data-en>All beverages at the lodge included</li><li data-pt>Todas as bebidas no lodge incluídas</li>
-          <li data-en>Laundry service included</li><li data-pt>Serviço de lavanderia incluído</li>
-          <li data-en>Airport transfer included</li><li data-pt>Transfer do aeroporto incluído</li>
+          <li class="lang-en">Accommodation at Estancia Don Cindo</li><li class="lang-pt">Hospedagem na Estância Don Cindo</li>
+          <li class="lang-en">All meals — breakfast, lunch &amp; dinner</li><li class="lang-pt">Todas as refeições — café, almoço e jantar</li>
+          <li class="lang-en">Expert certified fly fishing guides</li><li class="lang-pt">Guias especializados e certificados</li>
+          <li class="lang-en">Motor boats &amp; premium fly fishing equipment</li><li class="lang-pt">Barcos a motor e equipamentos premium</li>
+          <li class="lang-en">Argentine wines with dinner</li><li class="lang-pt">Vinhos argentinos com o jantar</li>
+          <li class="lang-en">All beverages at the lodge included</li><li class="lang-pt">Todas as bebidas no lodge incluídas</li>
+          <li class="lang-en">Laundry service included</li><li class="lang-pt">Serviço de lavanderia incluído</li>
+          <li class="lang-en">Airport transfer included</li><li class="lang-pt">Transfer do aeroporto incluído</li>
         </ul>
-        <div class="col-header not" style="margin-top:2px" data-en>✕ Not Included</div>
-        <div class="col-header not" style="margin-top:2px" data-pt>✕ Não Incluído</div>
+        <div class="col-header not" style="margin-top:2px" class="lang-en">✕ Not Included</div>
+        <div class="col-header not" style="margin-top:2px" class="lang-pt">✕ Não Incluído</div>
         <ul class="exp-list not">
-          <li data-en>International &amp; domestic flights</li><li data-pt>Voos internacionais e domésticos</li>
-          <li data-en>Gratuity for guides &amp; lodge staff</li><li data-pt>Gorjetas para guias e equipe</li>
+          <li class="lang-en">International &amp; domestic flights</li><li class="lang-pt">Voos internacionais e domésticos</li>
+          <li class="lang-en">Gratuity for guides &amp; lodge staff</li><li class="lang-pt">Gorjetas para guias e equipe</li>
         </ul>
-        <div class="col-header ext" style="margin-top:2px" data-en>+ Extras</div>
-        <div class="col-header ext" style="margin-top:2px" data-pt>+ Extras</div>
+        <div class="col-header ext" style="margin-top:2px" class="lang-en">+ Extras</div>
+        <div class="col-header ext" style="margin-top:2px" class="lang-pt">+ Extras</div>
         <ul class="exp-list ext">
-          <li data-en>Fly rods for rent</li><li data-pt>Aluguel de varas de mosca</li>
-          <li data-en>25 specific selected flies for your trip</li><li data-pt>25 moscas selecionadas para a viagem</li>
+          <li class="lang-en">Fly rods for rent</li><li class="lang-pt">Aluguel de varas de mosca</li>
+          <li class="lang-en">25 specific selected flies for your trip</li><li class="lang-pt">25 moscas selecionadas para a viagem</li>
         </ul>
       </div>
       <div>
-        <div class="col-header wat" data-en>Waters We Fish</div>
-        <div class="col-header wat" data-pt>Onde Pescamos</div>
+        <div class="col-header wat lang-en">Waters We Fish</div>
+        <div class="col-header wat lang-pt">Onde Pescamos</div>
         <div class="waters-box">
           <ul class="w-list">
-            <li><strong data-en>Paraná River</strong><strong data-pt>Rio Paraná</strong><span data-en>Private access — wild tropical environment</span><span data-pt>Acesso privado — ambiente tropical selvagem</span></li>
-            <li><strong>Pira Pitá</strong><span data-en>Remote &amp; exclusive stretch</span><span data-pt>Trecho remoto e exclusivo</span></li>
+            <li><strong class="lang-en">Paraná River</strong><strong class="lang-pt">Rio Paraná</strong><span class="lang-en">Private access — wild tropical environment</span><span class="lang-pt">Acesso privado — ambiente tropical selvagem</span></li>
+            <li><strong>Pira Pitá</strong><span class="lang-en">Remote &amp; exclusive stretch</span><span class="lang-pt">Trecho remoto e exclusivo</span></li>
           </ul>
         </div>
-        <div class="col-header wat" style="margin-top:2px" data-en>Target Species</div>
-        <div class="col-header wat" style="margin-top:2px" data-pt>Espécies Alvo</div>
+        <div class="col-header wat" style="margin-top:2px" class="lang-en">Target Species</div>
+        <div class="col-header wat" style="margin-top:2px" class="lang-pt">Espécies Alvo</div>
         <div class="waters-box">
           <ul class="s-list">
-            <li><strong>Golden Dorado</strong><span data-en>The king of the river</span><span data-pt>O rei do rio</span></li>
-            <li><strong>Pacú</strong><span data-en>Powerful tropical fighter</span><span data-pt>Lutador tropical poderoso</span></li>
-            <li><strong>Pira Pitá</strong><span data-en>Exotic &amp; coveted species</span><span data-pt>Espécie exótica e cobiçada</span></li>
+            <li><strong>Golden Dorado</strong><span class="lang-en">The king of the river</span><span class="lang-pt">O rei do rio</span></li>
+            <li><strong>Pacú</strong><span class="lang-en">Powerful tropical fighter</span><span class="lang-pt">Lutador tropical poderoso</span></li>
+            <li><strong>Pira Pitá</strong><span class="lang-en">Exotic &amp; coveted species</span><span class="lang-pt">Espécie exótica e cobiçada</span></li>
           </ul>
         </div>
       </div>
@@ -483,10 +483,10 @@ body.pt [data-pt]{display:revert;}
       </div>
     </div>
     <div class="exp-cta reveal">
-      <a class="btn-primary" href="#request" data-en>Request Availability — Upper Paraná</a>
-      <a class="btn-primary" href="#request" data-pt>Solicitar Disponibilidade — Alto Paraná</a>
-      <div class="exp-price" data-en>From <strong>USD $950</strong> per person / per day · Min. 4 nights</div>
-      <div class="exp-price" data-pt>A partir de <strong>USD $950</strong> por pessoa / por dia · Mín. 4 noites</div>
+      <a class="btn-primary" href="#request" class="lang-en">Request Availability — Upper Paraná</a>
+      <a class="btn-primary" href="#request" class="lang-pt">Solicitar Disponibilidade — Alto Paraná</a>
+      <div class="exp-price lang-en">From <strong>USD $950</strong> per person / per day · Min. 4 nights</div>
+      <div class="exp-price lang-pt">A partir de <strong>USD $950</strong> por pessoa / por dia · Mín. 4 noites</div>
     </div>
   </div>
 </section>
@@ -496,63 +496,63 @@ body.pt [data-pt]{display:revert;}
   <div class="container">
     <div class="exp-header reveal">
       <div class="exp-header-left">
-        <div class="label" data-en>Experience 03 · Patagonia</div>
-        <div class="label" data-pt>Experiência 03 · Patagônia</div>
+        <div class="label lang-en">Experience 03 · Patagonia</div>
+        <div class="label lang-pt">Experiência 03 · Patagônia</div>
         <div class="section-divider"></div>
         <h2>Giant Migratory Brown</h2>
-        <div class="exp-subtitle" data-en>Limay River · Patagonia · Argentina · From April to May</div>
-        <div class="exp-subtitle" data-pt>Rio Limay · Patagônia · Argentina · De Abril a Maio</div>
+        <div class="exp-subtitle lang-en">Limay River · Patagonia · Argentina · From April to May</div>
+        <div class="exp-subtitle lang-pt">Rio Limay · Patagônia · Argentina · De Abril a Maio</div>
       </div>
       <div class="exp-season">
-        <span class="season-label" data-en>Season</span>
-        <span class="season-label" data-pt>Temporada</span>
-        <div class="season-value" data-en>April to May</div>
-        <div class="season-value" data-pt>Abril a Maio</div>
+        <span class="season-label lang-en">Season</span>
+        <span class="season-label lang-pt">Temporada</span>
+        <div class="season-value lang-en">April to May</div>
+        <div class="season-value lang-pt">Abril a Maio</div>
       </div>
     </div>
     <div class="exp-body reveal">
       <div>
-        <div class="col-header inc" data-en>✓ Included</div>
-        <div class="col-header inc" data-pt>✓ Incluído</div>
+        <div class="col-header inc lang-en">✓ Included</div>
+        <div class="col-header inc lang-pt">✓ Incluído</div>
         <ul class="exp-list inc">
-          <li data-en>Accommodation (lodge)</li><li data-pt>Hospedagem (lodge)</li>
-          <li data-en>All meals — breakfast, lunch &amp; dinner</li><li data-pt>Todas as refeições — café, almoço e jantar</li>
-          <li data-en>Expert certified fly fishing guides</li><li data-pt>Guias especializados e certificados</li>
-          <li data-en>Drift boats &amp; premium fly fishing equipment</li><li data-pt>Drift boats e equipamentos premium</li>
-          <li data-en>All river and lake transfers</li><li data-pt>Todos os transfers de rio e lago</li>
-          <li data-en>Gourmet riverside lunches every day</li><li data-pt>Almoços gourmet à beira do rio todos os dias</li>
-          <li data-en>Argentine wines with dinner</li><li data-pt>Vinhos argentinos com o jantar</li>
-          <li data-en>All beverages at the lodge included</li><li data-pt>Todas as bebidas no lodge incluídas</li>
-          <li data-en>Laundry service included</li><li data-pt>Serviço de lavanderia incluído</li>
-          <li data-en>Airport transfer — San Martín de los Andes or Bariloche</li><li data-pt>Transfer — San Martín de los Andes ou Bariloche</li>
+          <li class="lang-en">Accommodation (lodge)</li><li class="lang-pt">Hospedagem (lodge)</li>
+          <li class="lang-en">All meals — breakfast, lunch &amp; dinner</li><li class="lang-pt">Todas as refeições — café, almoço e jantar</li>
+          <li class="lang-en">Expert certified fly fishing guides</li><li class="lang-pt">Guias especializados e certificados</li>
+          <li class="lang-en">Drift boats &amp; premium fly fishing equipment</li><li class="lang-pt">Drift boats e equipamentos premium</li>
+          <li class="lang-en">All river and lake transfers</li><li class="lang-pt">Todos os transfers de rio e lago</li>
+          <li class="lang-en">Gourmet riverside lunches every day</li><li class="lang-pt">Almoços gourmet à beira do rio todos os dias</li>
+          <li class="lang-en">Argentine wines with dinner</li><li class="lang-pt">Vinhos argentinos com o jantar</li>
+          <li class="lang-en">All beverages at the lodge included</li><li class="lang-pt">Todas as bebidas no lodge incluídas</li>
+          <li class="lang-en">Laundry service included</li><li class="lang-pt">Serviço de lavanderia incluído</li>
+          <li class="lang-en">Airport transfer — San Martín de los Andes or Bariloche</li><li class="lang-pt">Transfer — San Martín de los Andes ou Bariloche</li>
         </ul>
-        <div class="col-header not" style="margin-top:2px" data-en>✕ Not Included</div>
-        <div class="col-header not" style="margin-top:2px" data-pt>✕ Não Incluído</div>
+        <div class="col-header not" style="margin-top:2px" class="lang-en">✕ Not Included</div>
+        <div class="col-header not" style="margin-top:2px" class="lang-pt">✕ Não Incluído</div>
         <ul class="exp-list not">
-          <li data-en>International &amp; domestic flights</li><li data-pt>Voos internacionais e domésticos</li>
-          <li data-en>Gratuity for guides &amp; lodge staff</li><li data-pt>Gorjetas para guias e equipe</li>
+          <li class="lang-en">International &amp; domestic flights</li><li class="lang-pt">Voos internacionais e domésticos</li>
+          <li class="lang-en">Gratuity for guides &amp; lodge staff</li><li class="lang-pt">Gorjetas para guias e equipe</li>
         </ul>
-        <div class="col-header ext" style="margin-top:2px" data-en>+ Extras</div>
-        <div class="col-header ext" style="margin-top:2px" data-pt>+ Extras</div>
+        <div class="col-header ext" style="margin-top:2px" class="lang-en">+ Extras</div>
+        <div class="col-header ext" style="margin-top:2px" class="lang-pt">+ Extras</div>
         <ul class="exp-list ext">
-          <li data-en>Fly rods for rent</li><li data-pt>Aluguel de varas de mosca</li>
-          <li data-en>25 specific selected flies for your trip</li><li data-pt>25 moscas selecionadas para a viagem</li>
+          <li class="lang-en">Fly rods for rent</li><li class="lang-pt">Aluguel de varas de mosca</li>
+          <li class="lang-en">25 specific selected flies for your trip</li><li class="lang-pt">25 moscas selecionadas para a viagem</li>
         </ul>
       </div>
       <div>
-        <div class="col-header wat" data-en>Waters We Fish</div>
-        <div class="col-header wat" data-pt>Onde Pescamos</div>
+        <div class="col-header wat lang-en">Waters We Fish</div>
+        <div class="col-header wat lang-pt">Onde Pescamos</div>
         <div class="waters-box">
           <ul class="w-list">
-            <li><strong data-en>Limay River</strong><strong data-pt>Rio Limay</strong><span data-en>Upper &amp; mid stretches — pristine, exclusive trout water</span><span data-pt>Trechos superiores e médios — água exclusiva para trutas</span></li>
+            <li><strong class="lang-en">Limay River</strong><strong class="lang-pt">Rio Limay</strong><span class="lang-en">Upper &amp; mid stretches — pristine, exclusive trout water</span><span class="lang-pt">Trechos superiores e médios — água exclusiva para trutas</span></li>
           </ul>
         </div>
-        <div class="col-header wat" style="margin-top:2px" data-en>Target Species</div>
-        <div class="col-header wat" style="margin-top:2px" data-pt>Espécies Alvo</div>
+        <div class="col-header wat" style="margin-top:2px" class="lang-en">Target Species</div>
+        <div class="col-header wat" style="margin-top:2px" class="lang-pt">Espécies Alvo</div>
         <div class="waters-box">
           <ul class="s-list">
-            <li><strong>Brown Trout</strong><span data-en>World record sizes — the ultimate freshwater trophy</span><span data-pt>Tamanhos recordes mundiais — o troféu máximo de água doce</span></li>
-            <li><strong>Rainbow Trout</strong><span data-en>Acrobatic, powerful &amp; spectacular fighters</span><span data-pt>Acrobática, poderosa e espetacular</span></li>
+            <li><strong>Brown Trout</strong><span class="lang-en">World record sizes — the ultimate freshwater trophy</span><span class="lang-pt">Tamanhos recordes mundiais — o troféu máximo de água doce</span></li>
+            <li><strong>Rainbow Trout</strong><span class="lang-en">Acrobatic, powerful &amp; spectacular fighters</span><span class="lang-pt">Acrobática, poderosa e espetacular</span></li>
           </ul>
         </div>
       </div>
@@ -562,10 +562,10 @@ body.pt [data-pt]{display:revert;}
       </div>
     </div>
     <div class="exp-cta reveal">
-      <a class="btn-primary" href="#request" data-en>Request Availability — Migratory Brown</a>
-      <a class="btn-primary" href="#request" data-pt>Solicitar Disponibilidade — Marron Migratória</a>
-      <div class="exp-price" data-en>From <strong>USD $950</strong> per person / per day · Min. 4 nights</div>
-      <div class="exp-price" data-pt>A partir de <strong>USD $950</strong> por pessoa / por dia · Mín. 4 noites</div>
+      <a class="btn-primary" href="#request" class="lang-en">Request Availability — Migratory Brown</a>
+      <a class="btn-primary" href="#request" class="lang-pt">Solicitar Disponibilidade — Marron Migratória</a>
+      <div class="exp-price lang-en">From <strong>USD $950</strong> per person / per day · Min. 4 nights</div>
+      <div class="exp-price lang-pt">A partir de <strong>USD $950</strong> por pessoa / por dia · Mín. 4 noites</div>
     </div>
   </div>
 </section>
@@ -574,36 +574,36 @@ body.pt [data-pt]{display:revert;}
 <section class="team-section">
   <div class="container">
     <div class="section-header reveal">
-      <div class="label" data-en>Your Guides</div>
-      <div class="label" data-pt>Seus Guias</div>
+      <div class="label lang-en">Your Guides</div>
+      <div class="label lang-pt">Seus Guias</div>
       <div class="section-divider center"></div>
-      <h2 data-en>World-Class Guides.<br>Decades of River Knowledge.</h2>
-      <h2 data-pt>Guias de Classe Mundial.<br>Décadas de Conhecimento nos Rios.</h2>
+      <h2 class="lang-en">World-Class Guides.<br>Decades of River Knowledge.</h2>
+      <h2 class="lang-pt">Guias de Classe Mundial.<br>Décadas de Conhecimento nos Rios.</h2>
     </div>
     <div class="team-grid">
       <div class="guide-card reveal">
         <div class="guide-card-img"><img src="https://drive.google.com/uc?export=view&id=19PUt8nUDQfqDzOOqxFO8wYaK0DshpR7-" alt="Diego" loading="lazy"></div>
-        <div class="guide-card-info"><h4>Diego</h4><p data-en>Owner &amp; Lead Guide</p><p data-pt>Proprietário e Guia Principal</p></div>
+        <div class="guide-card-info"><h4>Diego</h4><p class="lang-en">Owner &amp; Lead Guide</p><p class="lang-pt">Proprietário e Guia Principal</p></div>
       </div>
       <div class="guide-card reveal reveal-delay-1">
         <div class="guide-card-img"><img src="https://drive.google.com/uc?export=view&id=1bcxywNZASEdaCw5eU2ddxypLL5uy5zVl" alt="Juan" loading="lazy"></div>
-        <div class="guide-card-info"><h4>Juan</h4><p data-en>Head Guide &amp; Int&#39;l Guide</p><p data-pt>Guia Principal e Internacional</p></div>
+        <div class="guide-card-info"><h4>Juan</h4><p class="lang-en">Head Guide &amp; Int&#39;l Guide</p><p class="lang-pt">Guia Principal e Internacional</p></div>
       </div>
       <div class="guide-card reveal reveal-delay-2">
         <div class="guide-card-img"><img src="https://drive.google.com/uc?export=view&id=1Nvv-l_mou7mBVqQxcepr0XCnj3Y3NHOO" alt="Francisco" loading="lazy"></div>
-        <div class="guide-card-info"><h4>Francisco</h4><p data-en>Professional Guide</p><p data-pt>Guia Profissional</p></div>
+        <div class="guide-card-info"><h4>Francisco</h4><p class="lang-en">Professional Guide</p><p class="lang-pt">Guia Profissional</p></div>
       </div>
       <div class="guide-card reveal reveal-delay-2">
         <div class="guide-card-img"><img src="https://drive.google.com/uc?export=view&id=1490ajp9Hm4MkVpUCc2RAs1vpmRhCSnu4" alt="Christian" loading="lazy"></div>
-        <div class="guide-card-info"><h4>Christian</h4><p data-en>Professional Guide</p><p data-pt>Guia Profissional</p></div>
+        <div class="guide-card-info"><h4>Christian</h4><p class="lang-en">Professional Guide</p><p class="lang-pt">Guia Profissional</p></div>
       </div>
       <div class="guide-card reveal reveal-delay-3">
         <div class="guide-card-img"><img src="https://drive.google.com/uc?export=view&id=1EdCEuPRb4Apg_hEcnAVv7sB5UidtFL3y" alt="Marco" loading="lazy"></div>
-        <div class="guide-card-info"><h4>Marco</h4><p data-en>Professional Guide &amp; Tier</p><p data-pt>Guia Profissional e Amarrador</p></div>
+        <div class="guide-card-info"><h4>Marco</h4><p class="lang-en">Professional Guide &amp; Tier</p><p class="lang-pt">Guia Profissional e Amarrador</p></div>
       </div>
     </div>
-    <p class="team-quote reveal" data-en>"We don't just guide you to the fish — we share our passion for the river."</p>
-    <p class="team-quote reveal" data-pt>"Não apenas te guiamos até os peixes — compartilhamos nossa paixão pelo rio."</p>
+    <p class="team-quote reveal lang-en">"We don't just guide you to the fish — we share our passion for the river."</p>
+    <p class="team-quote reveal lang-pt">"Não apenas te guiamos até os peixes — compartilhamos nossa paixão pelo rio."</p>
   </div>
 </section>
 
@@ -611,55 +611,55 @@ body.pt [data-pt]{display:revert;}
 <section class="form-section" id="request">
   <div class="container-narrow">
     <div class="form-header reveal">
-      <div class="label" data-en>Book Your Trip</div>
-      <div class="label" data-pt>Reserve Sua Viagem</div>
+      <div class="label lang-en">Book Your Trip</div>
+      <div class="label lang-pt">Reserve Sua Viagem</div>
       <div class="section-divider center"></div>
-      <h2 data-en>Request Availability</h2>
-      <h2 data-pt>Solicitar Disponibilidade</h2>
-      <p data-en>Tell us which experience interests you and when you'd like to fish — we'll get back to you within 24 hours.</p>
-      <p data-pt>Diga-nos qual experiência te interessa e quando você gostaria de pescar — retornaremos em até 24 horas.</p>
+      <h2 class="lang-en">Request Availability</h2>
+      <h2 class="lang-pt">Solicitar Disponibilidade</h2>
+      <p class="lang-en">Tell us which experience interests you and when you'd like to fish — we'll get back to you within 24 hours.</p>
+      <p class="lang-pt">Diga-nos qual experiência te interessa e quando você gostaria de pescar — retornaremos em até 24 horas.</p>
     </div>
     <div id="contact-form" class="reveal">
       <div class="form-grid">
         <div class="form-group">
-          <label data-en>Full Name *</label>
-          <label data-pt>Nome Completo *</label>
+          <label class="lang-en">Full Name *</label>
+          <label class="lang-pt">Nome Completo *</label>
           <input type="text" id="name" placeholder="Your full name" required>
         </div>
         <div class="form-group">
-          <label data-en>Email Address *</label>
-          <label data-pt>Endereço de Email *</label>
+          <label class="lang-en">Email Address *</label>
+          <label class="lang-pt">Endereço de Email *</label>
           <input type="email" id="email" placeholder="your@email.com" required>
         </div>
         <div class="form-group">
-          <label data-en>Phone / WhatsApp</label>
-          <label data-pt>Telefone / WhatsApp</label>
+          <label class="lang-en">Phone / WhatsApp</label>
+          <label class="lang-pt">Telefone / WhatsApp</label>
           <input type="tel" id="phone" placeholder="+1 (555) 000-0000">
         </div>
         <div class="form-group">
-          <label data-en>Experience *</label>
-          <label data-pt>Experiência *</label>
+          <label class="lang-en">Experience *</label>
+          <label class="lang-pt">Experiência *</label>
           <select id="exp-select" required>
-            <option value="" data-en>Select an experience...</option>
-            <option value="" data-pt>Selecione uma experiência...</option>
-            <option value="Bravo Sur Lodge (Patagonia - Trout)" data-en>Bravo Sur Lodge — Patagonia (Trout)</option>
-            <option value="Bravo Sur Lodge (Patagônia - Truchas)" data-pt>Bravo Sur Lodge — Patagônia (Truchas)</option>
-            <option value="Upper Paraná River — Golden Dorado" data-en>Upper Paraná River — Golden Dorado</option>
-            <option value="Alto Paraná — Dourado" data-pt>Alto Paraná — Dourado</option>
-            <option value="Giant Migratory Brown — Limay River" data-en>Giant Migratory Brown — Limay River</option>
-            <option value="Marron Migratória Gigante — Rio Limay" data-pt>Marron Migratória Gigante — Rio Limay</option>
-            <option value="Multiple experiences" data-en>Interested in multiple experiences</option>
-            <option value="Múltiplas experiências" data-pt>Interesse em múltiplas experiências</option>
+            <option value="" class="lang-en">Select an experience...</option>
+            <option value="" class="lang-pt">Selecione uma experiência...</option>
+            <option value="Bravo Sur Lodge (Patagonia - Trout)" class="lang-en">Bravo Sur Lodge — Patagonia (Trout)</option>
+            <option value="Bravo Sur Lodge (Patagônia - Truchas)" class="lang-pt">Bravo Sur Lodge — Patagônia (Truchas)</option>
+            <option value="Upper Paraná River — Golden Dorado" class="lang-en">Upper Paraná River — Golden Dorado</option>
+            <option value="Alto Paraná — Dourado" class="lang-pt">Alto Paraná — Dourado</option>
+            <option value="Giant Migratory Brown — Limay River" class="lang-en">Giant Migratory Brown — Limay River</option>
+            <option value="Marron Migratória Gigante — Rio Limay" class="lang-pt">Marron Migratória Gigante — Rio Limay</option>
+            <option value="Multiple experiences" class="lang-en">Interested in multiple experiences</option>
+            <option value="Múltiplas experiências" class="lang-pt">Interesse em múltiplas experiências</option>
           </select>
         </div>
         <div class="form-group">
-          <label data-en>Preferred Travel Dates</label>
-          <label data-pt>Datas Preferidas</label>
+          <label class="lang-en">Preferred Travel Dates</label>
+          <label class="lang-pt">Datas Preferidas</label>
           <input type="text" id="dates" placeholder="e.g. April 5–15, 2026">
         </div>
         <div class="form-group">
-          <label data-en>Number of Anglers</label>
-          <label data-pt>Número de Pescadores</label>
+          <label class="lang-en">Number of Anglers</label>
+          <label class="lang-pt">Número de Pescadores</label>
           <select id="anglers">
             <option value="">Select...</option>
             <option value="1">1</option><option value="2">2</option>
@@ -667,23 +667,23 @@ body.pt [data-pt]{display:revert;}
           </select>
         </div>
         <div class="form-group full">
-          <label data-en>Questions or Notes</label>
-          <label data-pt>Perguntas ou Observações</label>
+          <label class="lang-en">Questions or Notes</label>
+          <label class="lang-pt">Perguntas ou Observações</label>
           <textarea id="message" placeholder="Tell us about your dream trip..."></textarea>
         </div>
       </div>
       <div class="form-submit">
-        <button class="btn-primary" onclick="handleSubmit(event)" data-en>Request Availability →</button>
-        <button class="btn-primary" onclick="handleSubmit(event)" data-pt>Solicitar Disponibilidade →</button>
-        <p class="form-note" data-en>We respond within 24 hours. No pressure, no obligations.</p>
-        <p class="form-note" data-pt>Respondemos em até 24 horas. Sem compromisso.</p>
+        <button class="btn-primary lang-en" id="btn-submit-en">Request Availability →</button>
+        <button class="btn-primary lang-pt" id="btn-submit-pt">Solicitar Disponibilidade →</button>
+        <p class="form-note lang-en">We respond within 24 hours. No pressure, no obligations.</p>
+        <p class="form-note lang-pt">Respondemos em até 24 horas. Sem compromisso.</p>
       </div>
     </div>
     <div id="success-msg" class="success-msg">
-      <h3 data-en>We'll Be in Touch Soon.</h3>
-      <h3 data-pt>Entraremos em Contato em Breve.</h3>
-      <p data-en>Thanks for reaching out. We'll respond within 24 hours with availability and everything you need to plan your Argentina fishing trip.</p>
-      <p data-pt>Obrigado pelo contato. Responderemos em até 24 horas com disponibilidade e tudo para planejar sua viagem.</p>
+      <h3 class="lang-en">We'll Be in Touch Soon.</h3>
+      <h3 class="lang-pt">Entraremos em Contato em Breve.</h3>
+      <p class="lang-en">Thanks for reaching out. We'll respond within 24 hours with availability and everything you need to plan your Argentina fishing trip.</p>
+      <p class="lang-pt">Obrigado pelo contato. Responderemos em até 24 horas com disponibilidade e tudo para planejar sua viagem.</p>
     </div>
   </div>
 </section>
@@ -692,19 +692,19 @@ body.pt [data-pt]{display:revert;}
 <div class="final-cta">
   <div class="final-cta-bg"></div>
   <div class="final-cta-content">
-    <div class="label" style="display:flex;justify-content:center;margin-bottom:1.5rem" data-en>Argentina Awaits</div>
-    <div class="label" style="display:flex;justify-content:center;margin-bottom:1.5rem" data-pt>A Argentina Aguarda</div>
-    <h2 data-en>Are You Ready<br><em>for the Adventure?</em></h2>
-    <h2 data-pt>Você Está Pronto<br><em>para a Aventura?</em></h2>
-    <p data-en>Limited availability each season. The best weeks go first — early planning is essential.</p>
-    <p data-pt>Disponibilidade limitada por temporada. As melhores semanas se esgotam primeiro.</p>
+    <div class="label" style="display:flex;justify-content:center;margin-bottom:1.5rem" class="lang-en">Argentina Awaits</div>
+    <div class="label" style="display:flex;justify-content:center;margin-bottom:1.5rem" class="lang-pt">A Argentina Aguarda</div>
+    <h2 class="lang-en">Are You Ready<br><em>for the Adventure?</em></h2>
+    <h2 class="lang-pt">Você Está Pronto<br><em>para a Aventura?</em></h2>
+    <p class="lang-en">Limited availability each season. The best weeks go first — early planning is essential.</p>
+    <p class="lang-pt">Disponibilidade limitada por temporada. As melhores semanas se esgotam primeiro.</p>
     <div class="cta-btns">
-      <a class="btn-primary" href="#request" data-en>Request Availability</a>
-      <a class="btn-primary" href="#request" data-pt>Solicitar Disponibilidade</a>
+      <a class="btn-primary" href="#request" class="lang-en">Request Availability</a>
+      <a class="btn-primary" href="#request" class="lang-pt">Solicitar Disponibilidade</a>
       <a class="btn-whatsapp" href="https://wa.me/5493541565766" target="_blank" rel="noopener">
         <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-        <span data-en>Chat on WhatsApp</span>
-        <span data-pt>Conversar no WhatsApp</span>
+        <span class="lang-en">Chat on WhatsApp</span>
+        <span class="lang-pt">Conversar no WhatsApp</span>
       </a>
     </div>
   </div>
@@ -714,8 +714,8 @@ body.pt [data-pt]{display:revert;}
   <div class="footer-inner">
     <div class="footer-brand">
       <h3>Argentina Fishing Experience</h3>
-      <p data-en>Official Reseller · Achala Outfitters · Orvis Endorsed · Since 1998<br>Patagonia · Upper Paraná · Argentina</p>
-      <p data-pt>Revendedor Oficial · Achala Outfitters · Certificado Orvis · Desde 1998<br>Patagônia · Alto Paraná · Argentina</p>
+      <p class="lang-en">Official Reseller · Achala Outfitters · Orvis Endorsed · Since 1998<br>Patagonia · Upper Paraná · Argentina</p>
+      <p class="lang-pt">Revendedor Oficial · Achala Outfitters · Certificado Orvis · Desde 1998<br>Patagônia · Alto Paraná · Argentina</p>
     </div>
     <div class="footer-links">
       <a href="mailto:argentinafishingexperience@gmail.com">argentinafishingexperience@gmail.com</a>
@@ -732,52 +732,77 @@ body.pt [data-pt]{display:revert;}
 </a>
 
 <script>
-function setLang(lang){
-  document.body.classList.toggle('pt',lang==='pt');
-  document.getElementById('btn-en').classList.toggle('active',lang==='en');
-  document.getElementById('btn-pt').classList.toggle('active',lang==='pt');
-  document.documentElement.lang=lang==='pt'?'pt-BR':'en';
-  const ta=document.getElementById('message');
-  if(ta) ta.placeholder=lang==='pt'?'Fale-nos sobre a viagem dos seus sonhos...':'Tell us about your dream trip...';
-}
-function scrollToSection(id){
-  const el=document.getElementById(id);
-  if(el){const y=el.getBoundingClientRect().top+window.scrollY-80;window.scrollTo({top:y,behavior:'smooth'});}
-}
-function handleSubmit(e){
-  e.preventDefault();
-  const name=document.getElementById('name').value.trim();
-  const email=document.getElementById('email').value.trim();
-  if(!name||!email){
-    if(!name)document.getElementById('name').style.borderColor='#c0392b';
-    if(!email)document.getElementById('email').style.borderColor='#c0392b';
-    return;
+document.addEventListener('DOMContentLoaded', function() {
+
+  // Language toggle
+  function setLang(lang) {
+    document.body.classList.toggle('pt', lang === 'pt');
+    document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+    document.getElementById('btn-pt').classList.toggle('active', lang === 'pt');
+    document.documentElement.lang = lang === 'pt' ? 'pt-BR' : 'en';
+    var ta = document.getElementById('message');
+    if (ta) ta.placeholder = lang === 'pt' ? 'Fale-nos sobre a viagem dos seus sonhos...' : 'Tell us about your dream trip...';
   }
-  const phone=document.getElementById('phone').value;
-  const exp=document.getElementById('exp-select').value;
-  const dates=document.getElementById('dates').value;
-  const anglers=document.getElementById('anglers').value;
-  const msg=document.getElementById('message').value;
-  const body=encodeURIComponent('New trip inquiry — Argentina Fishing Experience
 
-Name: '+name+'
-Email: '+email+'
-Phone: '+(phone||'Not provided')+'
-Experience: '+(exp||'Not specified')+'
-Dates: '+(dates||'Not specified')+'
-Anglers: '+(anglers||'Not specified')+'
+  document.getElementById('btn-en').addEventListener('click', function() { setLang('en'); });
+  document.getElementById('btn-pt').addEventListener('click', function() { setLang('pt'); });
 
-Message:
-'+(msg||'No message.'));
-  document.getElementById('contact-form').style.display='none';
-  const s=document.getElementById('success-msg');
-  s.style.display='block';
-  setTimeout(()=>{window.location.href='mailto:argentinafishingexperience@gmail.com?subject=Trip Inquiry — '+(exp||'General')+' — '+encodeURIComponent(name)+'&body='+body;},600);
-}
-window.addEventListener('scroll',()=>{document.getElementById('main-nav').classList.toggle('scrolled',window.scrollY>60);});
-const obs=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible');});},{threshold:0.1,rootMargin:'0px 0px -50px 0px'});
-document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
-setLang('en');
+  // Program cards scroll
+  function scrollToSection(id) {
+    var el = document.getElementById(id);
+    if (el) { var y = el.getBoundingClientRect().top + window.scrollY - 80; window.scrollTo({ top: y, behavior: 'smooth' }); }
+  }
+
+  var cardBravo = document.getElementById('card-bravo');
+  var cardParana = document.getElementById('card-parana');
+  var cardMigratory = document.getElementById('card-migratory');
+  if (cardBravo) cardBravo.addEventListener('click', function() { scrollToSection('bravo-sur'); });
+  if (cardParana) cardParana.addEventListener('click', function() { scrollToSection('upper-parana'); });
+  if (cardMigratory) cardMigratory.addEventListener('click', function() { scrollToSection('migratory-brown'); });
+
+  // Form submit
+  function handleSubmit(e) {
+    e.preventDefault();
+    var name = document.getElementById('name').value.trim();
+    var email = document.getElementById('email').value.trim();
+    if (!name || !email) {
+      if (!name) document.getElementById('name').style.borderColor = '#c0392b';
+      if (!email) document.getElementById('email').style.borderColor = '#c0392b';
+      return;
+    }
+    var phone = document.getElementById('phone').value;
+    var exp = document.getElementById('exp-select').value;
+    var dates = document.getElementById('dates').value;
+    var anglers = document.getElementById('anglers').value;
+    var msg = document.getElementById('message').value;
+    var body = encodeURIComponent('New trip inquiry — Argentina Fishing Experience\n\nName: ' + name + '\nEmail: ' + email + '\nPhone: ' + (phone || 'Not provided') + '\nExperience: ' + (exp || 'Not specified') + '\nDates: ' + (dates || 'Not specified') + '\nAnglers: ' + (anglers || 'Not specified') + '\n\nMessage:\n' + (msg || 'No message.'));
+    document.getElementById('contact-form').style.display = 'none';
+    document.getElementById('success-msg').style.display = 'block';
+    setTimeout(function() {
+      window.location.href = 'mailto:argentinafishingexperience@gmail.com?subject=Trip Inquiry — ' + encodeURIComponent(exp || 'General') + ' — ' + encodeURIComponent(name) + '&body=' + body;
+    }, 600);
+  }
+
+  var submitEn = document.getElementById('btn-submit-en');
+  var submitPt = document.getElementById('btn-submit-pt');
+  if (submitEn) submitEn.addEventListener('click', handleSubmit);
+  if (submitPt) submitPt.addEventListener('click', handleSubmit);
+
+  // Nav scroll effect
+  window.addEventListener('scroll', function() {
+    document.getElementById('main-nav').classList.toggle('scrolled', window.scrollY > 60);
+  });
+
+  // Reveal on scroll
+  var obs = new IntersectionObserver(function(entries) {
+    entries.forEach(function(e) { if (e.isIntersecting) e.target.classList.add('visible'); });
+  }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+  document.querySelectorAll('.reveal').forEach(function(el) { obs.observe(el); });
+
+  // Init language
+  setLang('en');
+
+});
 </script>
 </body>
 </html>
